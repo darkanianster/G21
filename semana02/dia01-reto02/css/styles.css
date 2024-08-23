@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/*font-family: "Plus Jakarta Sans", sans-serif;*/
+/* Weights: 500, 700 */
+
+/* ### Primary
+
+- Lime: hsl(61, 70%, 52%)
+- Red: hsl(4, 69%, 50%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Slate 100: hsl(202, 86%, 94%)
+- Slate 300: hsl(203, 41%, 72%)
+- Slate 500: hsl(200, 26%, 54%)
+- Slate 700: hsl(200, 24%, 40%)
+- Slate 900: hsl(202, 55%, 16%) */
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    main {
+      flex-direction: column; /* Apila las secciones una sobre otra */
+    }
+  }
+
+body, html {   
+    margin: 0;
+    padding: 0;
+    height: 100%;       
+  }
+
+body {
+    display:flex ;
+    /*border: 4px solid blue; */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    background-color: hsl(202, 86%, 94%);
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    /*border: 10px solid black;*/
+    max-width: 1000px;
+    width: 90%;
+    height: 35em;
+    display: flex;    
+}
+
+#izquierda {
+    padding: 2em;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    
+}
+#derecha {
+    background-color: hsl(202, 55%, 16%);
+    color: hsl(0, 0%, 100%);
+    width: 50%;
+    padding: 2em;
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;    
+}
+
+.header{
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    color: hsl(202, 55%, 16%) ;
+}
+
+#clear-link{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: hsl(200, 26%, 54%);
+}
+
+.form-group{
+    margin-bottom: 1em;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 0.5em;
+}
+
+
+

@@ -3,59 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact form</title>
+  <title>Mortgage Calculator</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <main class="contact-form">
-    <h1>Contact Us</h1>
+  <main>
+    <section id="izquierda">
 
-    <form>
-      <div class="row">
-        <label>
-          First Name <span>*</span>
-          <input type="text" />
-        </label>
-        
-        <label>
-          Last Name <span>*</span>
-          <input type="text" />
-        </label>
-      </div>
-
-      <label>
-        Email Address <span>*</span>
-        <input type="text" />
-      </label>
-
-      <label>
-        Query Type <span>*</span>
-        
-        <div class="row">
-          <div class="query-type">
-            <input type="radio" />
-            General Enquiry
-          </div>
+      <div class="header">
+        <h1>Mortgage Calculator</h1>    
+        <a href="#" id="clear-link">Clear All</a>
+      </div>      
   
-          <div class="query-type">
-            <input type="radio" />
-            Support Request
+      <form id="mortage-form">
+
+        <div class="form-group">
+          <label for="mortage-amount">Mortgage Amount</label>
+          <input type="number" id="mortage-amount" placeholder="Enter amount">
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="mortage-term">Mortgage Term</label>
+            <input type="number" id="mortage-term" placeholder="Enter years">
+          </div>
+          
+          <div class="form-group">
+            <label for="mortage-interest">Interest Rate</label>
+            <input type="number" id="mortage-rate" step="0.01" placeholder="Enter rate">
           </div>
         </div>
-      </label>
+
+         
+        <label>Mortgage Type</label>
+          <div class="radio-group">
+            <input type="radio" id="repayment" name="mortage-type">
+            <label for="repayment">Repayment</label>
+          </div>
+          <div>
+            <input type="radio" id="interest-only" name="mortage-type">
+            <label for="interest-only">Interest Only</label>
+          </div>
+
+         <button>Calculate Repayments</button>
+       
+
+      </form>  
+
+    </section>
+
+    <section id="derecha">
+      <h2>Your results</h2>
+
+      <p>Your results are shown below based on the information you provided. 
+        To adjust the results, edit the form and click “calculate repayments” again.
+      </p>
       
-      <label>
-        Message <span>*</span>
-        <textarea rows="5"></textarea>
-      </label>
-      
-      <label>
-        <input type="checkbox" />
-        I consent to being contacted by the team <span>*</span>
-      </label>
-      
-      <input type="submit" />
-    </form>
-  </main>
+      <div>
+        <p>Your monthly repayments</p>
+        <p>Total you'll repay over the term</p>
+      </div>
+
+    </section>    
+     
+
+</main>
+  
+    
+  
 </body>
 </html>

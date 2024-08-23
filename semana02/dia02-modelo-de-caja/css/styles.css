@@ -5,6 +5,12 @@ font-family: "Open Sans", sans-serif;
 font-family: "Raleway", system-ui;
 */
 
+/* uuu */
+
+:root {
+  --Dark-Blue:hsl(217, 28%, 15%);
+}
+
 /* GENERAL */
 
 * { /* Selector Universal */
@@ -19,7 +25,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
 
-  background-color: hsl(217, 28%, 15%);
+  background-color: var(--Dark-Blue);
   color: hsl(0, 0%, 100%);
 }
 
@@ -93,6 +99,8 @@ img {
   .hero {
     background-image: url(../images/bg-curvy-mobile.svg);
   }
+
+  
 }
 
 .hero__title {
@@ -149,6 +157,65 @@ img {
 /* FEATURES SECTION  */
 
 /* TODO: COLLABORATION SECTION - Maquetar esta sección */
+/* stay  */
+.stay {
+  /*border: 1px solid red; */
+  
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  background-color: hsl(218, 28%, 13%) ;
+  gap: 3rem;
+  
+}
+
+.stay div{
+  width: min(100% - 3rem, 720px);
+}
+
+.stay1 {
+  /*border: 2px solid  blue; */
+
+}
+
+.stay2 {
+
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  /*border: 3px solid green;  */
+  font-family: "Raleway", system-ui;
+  flex-direction: column;
+  text-align: left;  
+  
+}
+
+.stay2__title {
+      
+  width: 400px;
+   font-family: "Raleway", system-ui;
+   font-size: 3rem;
+   text-align: left;
+}
+
+.stay2__text {
+  
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;  
+  color: hsl(176, 24%, 88%);
+}
+
+.stay2__enlace {
+  
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  color: hsl(176, 68%, 64%);  
+  text-decoration: underline;
+  text-underline-offset: 8px;  
+  
+}
 
 /* TESTIMONIALS SECTION  */
 
